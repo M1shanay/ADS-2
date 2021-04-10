@@ -66,13 +66,10 @@ int countPairs3(int* arr, int len, int value) {
                     ++cnt;
                 }
                 break;
-            }
-            else
-                if ((value - arr[i]) < arr[mid])
+            } else { if ((value - arr[i]) < arr[mid])
                     right = mid;
                 else
-                    left = mid;
-            
+                    left = mid;}
         }
     }
     return count;
